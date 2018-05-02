@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_alignParentBottom="true"
+    android:id="@+id/utilities_frag_layout"
+    tools:context="qualtech_q_smart_home_automation_2018.q_smart.CustomMenu.Light.LightFragment">
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="19dp"
+        android:id="@+id/utilities_frag_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="horizontal"
+        android:background="#eda2da"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_add_utilities_title"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="6dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        app:srcCompat="@drawable/add_fab"
+        android:scaleType="center"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="@color/login_blue_all"
+        android:backgroundTint="@color/login_blue_all" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/fab_off_all_utilities"
+        android:background="@color/white"
+        android:backgroundTint="@color/white"
+        android:layout_centerHorizontal="true"
+        android:scaleType="center"
+        app:srcCompat="@drawable/tv_one"/>
+
+
+</RelativeLayout>

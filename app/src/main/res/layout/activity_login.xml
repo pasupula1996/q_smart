@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context="qualtech_q_smart_home_automation_2018.q_smart.Firebase.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="56dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp">
+
+        <ImageView
+            android:id="@+id/logic_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="72dp"
+            android:src="@drawable/logo"
+            android:layout_gravity="center_horizontal"/>
+
+
+        <EditText android:id="@+id/input_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:hint="Email"
+            android:maxLines="1"
+            android:focusableInTouchMode="true"
+            android:textColor="@color/logic_editTxt"
+            android:drawableLeft="@mipmap/account_box"
+            android:drawablePadding="5dp"
+            android:drawableTint="@color/login_blue_all"
+            android:backgroundTint="@color/login_blue_all"
+            android:textColorHint="@color/login_blue_all"/>
+
+        <EditText android:id="@+id/input_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:hint="Password"
+            android:maxLines="1"
+            android:focusableInTouchMode="true"
+            android:textColor="@color/logic_editTxt"
+            android:drawableLeft="@mipmap/password"
+            android:drawablePadding="5dp"
+            android:drawableTint="@color/login_blue_all"
+            android:backgroundTint="@color/login_blue_all"
+            android:textColorHint="@color/login_blue_all"/>
+
+
+        <Button
+            android:id="@+id/login_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Login"
+            android:background="@drawable/rounded_btn"
+            android:textColor="@color/login_blue_all"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/reset_password"
+            android:text="@string/reset_email"
+            android:layout_marginTop="10dp"
+            android:textColor="#F00"/>
+        <ProgressBar
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/login_progressbar"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"/>
+
+
+
+    </LinearLayout>
+    <TextView
+        android:layout_margin="20dp"
+        android:textColor="#DD2C00"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/login_hint"
+        android:layout_alignParentBottom="true"
+        android:textSize="13dp"/>
+
+</RelativeLayout>

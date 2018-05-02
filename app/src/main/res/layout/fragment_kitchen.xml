@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="#fff"
+    tools:context=".SimpleMenu.KitchenFragment">
+    <ImageView
+        android:id="@+id/kitchen_room"
+        android:layout_width="match_parent"
+        android:layout_height="135dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/kitchen_back" />
+
+    <TextView
+        android:id="@+id/rename_kitchen_room"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/kitchen_room"
+        android:layout_centerHorizontal="true"
+        android:text="Kitchen room"
+        android:padding="1dp"
+        android:alpha="0.8"
+        android:background="#60000000"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:foreground="?android:attr/selectableItemBackground"/>
+
+    <ImageView
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:id="@+id/edit_kitchen_cover_photo"
+        app:srcCompat="@drawable/ic_edit_black"
+        android:layout_alignParentRight="true"
+        android:alpha="0.9"
+        android:background="#fff"
+        android:layout_margin="10dp"
+        android:layout_alignTop="@id/kitchen_room"
+        android:foreground="?android:attr/selectableItemBackground"/>
+    <ScrollView
+        android:layout_below="@id/kitchen_room"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/kitchen_lights"
+                android:background="#f7d30a"
+                android:padding="5dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:weightSum="4"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/kitchen_bulb_img"
+                    app:srcCompat="@drawable/ic_lightbulb_off"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="Light"
+                    android:textColor="#fff"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/kitchen_dimmer_dialog_layout"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:padding="5dp"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:background="#745959">
+                <ImageView
+                    android:id="@+id/kitchen_dimmer_img"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/ic_lightbulb_off"
+                    android:layout_weight="2"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:text="Dimmer"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical"
+                    android:textColor="#fff"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/tv_off_rounded"
+                    android:gravity="center"
+                    android:text="OFF"
+                    android:visibility="gone"
+                    android:textStyle="bold"
+                    android:id="@+id/kitchen_dimmer_switch"
+                    android:foreground="?android:attr/selectableItemBackground"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/kitchen_fan_dialog_layout"
+                android:background="#d7f70a"
+                android:padding="5dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+
+                <ImageView
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/kitchen_fan_img"
+                    app:srcCompat="@drawable/ic_fan_gray"/>
+                <TextView
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:text="Fan"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/kitchen_plug_layout"
+                android:background="#f9ad72"
+                android:padding="5dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_height="60dp">
+
+
+                <ImageView
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/kitchen_socket_image"
+                    app:srcCompat="@drawable/plug_gray"/>
+                <TextView
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:text="Socket"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/kitchen_tv"
+                android:background="#94f9e3"
+                android:padding="5dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical">
+
+
+                <ImageView
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/kitchen_tv_one"
+                    app:srcCompat="@drawable/tv_"/>
+                <TextView
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:text="Television"/>
+                <ImageView
+                    android:id="@+id/kitchen_tv_controls"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/ic_settings_overscan_black_24dp"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layout_weight="2"/>
+                <TextView
+                    android:id="@+id/kitchen_room_tv_switch"
+                    android:layout_weight="1.50"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textStyle="bold"
+                    android:text="OFF"
+                    android:textColor="#000"
+                    android:background="@drawable/tv_off_rounded"
+                    android:gravity="center"
+                    android:foreground="?android:attr/selectableItemBackground"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/kitchen_curtain"
+                android:padding="5dp"
+                android:weightSum="3"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="15dp"
+                android:background="#afc8f7">
+                <TextView
+                    android:textStyle="bold"
+                    android:text="Curtain"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+                <SeekBar
+                    android:id="@+id/kitchen_curtain_seekbar"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:thumb="@drawable/ic_skip_next_black"
+                    android:progress="4"
+                    android:progressDrawable="@drawable/curtain_seekbar"
+                    android:layout_weight="2"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/kitchen_ac"
+                android:background="#c37bea"
+                android:padding="5dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+
+                <ImageView
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/kitchen_ac_image"
+                    app:srcCompat="@drawable/ic_ac"/>
+                <TextView
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:text="A.C"/>
+
+                <TextView
+                    android:id="@+id/kitchen_ac_switch"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textStyle="bold"
+                    android:text="OFF"
+                    android:textColor="#000"
+                    android:background="@drawable/tv_off_rounded"
+                    android:gravity="center"
+                    android:foreground="?android:attr/selectableItemBackground"/>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/kitchen_speakers"
+                android:background="#f972e2"
+                android:padding="5dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center">
+
+
+                <ImageView
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/kitchen_speakers_image"
+                    app:srcCompat="@drawable/ic_speaker_white"/>
+                <TextView
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:text="Speakers"/>
+
+                <TextView
+                    android:id="@+id/kitchen_speakers_switch"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textStyle="bold"
+                    android:text="OFF"
+                    android:textColor="#000"
+                    android:background="@drawable/tv_off_rounded"
+                    android:gravity="center"
+                    android:foreground="?android:attr/selectableItemBackground"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+</RelativeLayout>

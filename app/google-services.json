@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "782064352826",
+    "firebase_url": "https://qsmart-d2c05.firebaseio.com",
+    "project_id": "qsmart-d2c05",
+    "storage_bucket": "qsmart-d2c05.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:782064352826:android:cfcc3e3de5e89160",
+        "android_client_info": {
+          "package_name": "qualtech_q_smart_home_automation_2018.q_smart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "782064352826-s59rhk8roomcvpmnfg3gar22lq0u9rqe.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "qualtech_q_smart_home_automation_2018.q_smart",
+            "certificate_hash": "bb9366ccfd34ac0778a4768a520384af2ff2202c"
+          }
+        },
+        {
+          "client_id": "782064352826-c3n25hni7vprfg66a90dgnes17ug2br4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLhdqjG3cmVGG59X54X19le6UZ4HGvGd8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "782064352826-c3n25hni7vprfg66a90dgnes17ug2br4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/popup_details"
+    tools:context="qualtech_q_smart_home_automation_2018.q_smart.CustomMenuActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_below="@id/linear_layout3"
+            android:id="@+id/linear_layout4"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+
+            <TextView
+                android:background="#F78651"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layout_height="match_parent" />
+            <TextView
+                android:background="#F7A252"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linear_layout1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <TextView
+            android:id="@+id/lights"
+            android:text="LIGHTS"
+            android:textColor="@color/white"
+            android:gravity="center_vertical|center_horizontal"
+            android:background="#532C54"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/utilities"
+            android:text="UTILITIES"
+            android:textColor="@color/white"
+            android:gravity="center_vertical|center_horizontal"
+            android:background="#643250"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@id/linear_layout1"
+        android:id="@+id/linear_layout2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <TextView
+            android:id="@+id/entertainment"
+            android:text="ENTERTAINMENT"
+            android:textColor="@color/white"
+            android:gravity="center_vertical|center_horizontal"
+            android:background="#AB5D6A"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/services"
+            android:text="SERVICES"
+            android:textColor="@color/white"
+            android:gravity="center_vertical|center_horizontal"
+            android:background="#D77E71"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@id/linear_layout2"
+        android:id="@+id/linear_layout3"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <TextView
+            android:id="@+id/security"
+            android:text="SECURITY"
+            android:textColor="@color/white"
+            android:gravity="center_vertical|center_horizontal"
+            android:background="#F7A683"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_height="match_parent" />
+        <TextView
+            android:background="#F66950"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

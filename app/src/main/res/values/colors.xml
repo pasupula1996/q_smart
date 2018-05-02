@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4b67d4</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="splashBackground">#4DD0E1</color>
+    <color name="white">#FFF</color>
+    <color name="login_blue_all">#1685d4</color>
+    <color name="logic_editTxt">#3F51B5</color>
+
+    <color name="action_bar_2">#613261</color>
+    //common list light background color
+    <color name="common_light_background">#fcfca2</color>
+    <color name="common_fan_background">#b1b1f7</color>
+    <color name="common_plug_background">#9E9E9E</color>
+</resources>

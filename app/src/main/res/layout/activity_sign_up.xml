@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#009688"
+    tools:context="qualtech_q_smart_home_automation_2018.q_smart.Firebase.SignUpActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40dp">
+
+        <ImageView
+            android:id="@+id/logic_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="72dp"
+            android:src="@drawable/logo"
+            android:layout_gravity="center_horizontal"/>
+
+        <EditText
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edt_full_name"
+            android:hint="@string/enter_fullname"
+            android:drawableLeft="@mipmap/account_box"
+            android:drawablePadding="5dp"
+            android:drawableTint="@color/white"
+            android:inputType="text"/>
+        <EditText
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_email"
+            android:id="@+id/edt_email"
+            android:drawableLeft="@mipmap/email"
+            android:drawablePadding="5dp"
+            android:drawableTint="@color/white"
+            android:inputType="textEmailAddress"/>
+        <EditText
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_password"
+            android:id="@+id/edt_password"
+            android:drawableLeft="@mipmap/lock"
+            android:drawablePadding="5dp"
+            android:drawableTint="@color/white"
+            android:inputType="textPassword"/>
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Register"
+            android:background="@drawable/rounded_btn"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/already_account"
+            android:text="Already an account. Login here"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="17dp"
+            android:textColor="#09e76d"
+            android:textStyle="bold"/>
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sProgressbar"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+</RelativeLayout>

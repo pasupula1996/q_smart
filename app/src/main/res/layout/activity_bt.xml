@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="qualtech_q_smart_home_automation_2018.q_smart.Bluetooth.BTActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/bt_offOn_layout">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:text="Bluetooth "
+            android:textSize="20sp"/>
+        <Button
+            android:id="@+id/offOn_bt"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="On" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_below="@id/bt_offOn_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/connected_layout"
+        android:layout_marginRight="10dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Connected to :"
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/bt_connected"
+            android:layout_below="@id/bt_offOn_layout"/>
+
+        <TextView
+            android:id="@+id/current_connected_bluetooth"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:text="none"
+            android:textSize="16sp"
+            android:textColor="#01ae01"
+            android:layout_below="@id/bt_offOn_layout"
+            android:layout_toRightOf="@id/bt_connected"
+            android:layout_marginLeft="5dp"
+            android:layout_alignBaseline="@id/bt_connected"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/bt_disconnect"
+            android:layout_toRightOf="@id/current_connected_bluetooth"
+            android:layout_below="@id/bt_offOn_layout"
+            android:text="disconect"
+            android:visibility="gone" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btPaired"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/connected_layout"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:text="Paired devices" />
+    <Button
+        android:id="@+id/scan_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scan"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/connected_layout"
+        android:layout_marginRight="20dp"/>
+    <ListView
+        android:layout_below="@id/btPaired"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:longClickable="false"
+        android:id="@+id/btPairedLV">
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_above="@id/lv_layout"
+        android:visibility="gone"
+        android:layout_margin="10dp">
+
+        <Button
+            android:id="@+id/incrementBtn"
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:textSize="20sp"/>
+        <Button
+            android:id="@+id/decrementBtn"
+            android:text="-"
+            android:textSize="20sp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:weightSum="3"
+      android:id="@+id/lv_layout"
+      android:visibility="gone"
+      android:layout_alignParentBottom="true"
+      android:background="#fad0d0">
+      <EditText
+          android:id="@+id/user_input"
+          android:layout_width="0dp"
+          android:layout_weight="2"
+          android:layout_height="wrap_content"/>
+
+      <Button
+          android:layout_width="0dp"
+          android:layout_weight="1"
+          android:layout_height="wrap_content"
+          android:id="@+id/btnSend"
+          android:text="Send"/>
+  </LinearLayout>
+
+</RelativeLayout>

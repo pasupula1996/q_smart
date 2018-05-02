@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="General">
+
+        <EditTextPreference
+            android:defaultValue="Q-smart"
+            android:title="Bluetooth Rename"
+            android:summary="Edit your buletooth name"/>
+        <EditTextPreference
+            android:defaultValue="Q - Smart"
+            android:title="WI-FI Rename"
+            android:summary="Change wi-fi name"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Notifications">
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:title="Enable Notifications"
+            android:summary="to Receive external device notifications"/>
+        <RingtonePreference
+            android:title="Notification sound"
+            android:summary="change ringtone"/>
+        <SwitchPreference
+            android:title="Vibrate"
+            android:summary="Vibrate on new notifications"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="About">
+        <Preference
+            android:selectable="false"
+            android:summary="Q - smart app is provided by Qualtech telesys private limited.
+            you can control your smart home using this device like smart tv, lights, fans, A.C."/>
+        <Preference
+            android:title="App version"
+            android:summary="V.0.1"/>
+        <Preference
+            android:title="Send Feedback"
+            android:summary="got any queries, we are happy to help you"/>
+        <Preference
+            android:title="Terms and Conditions">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="www.qualtech.in"/>
+        </Preference>
+        <Preference android:title="Help and Support">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="www.qualtech.in"/>
+        </Preference>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

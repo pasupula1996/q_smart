@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/settings"
+        android:title="Settings"
+        android:icon="@drawable/settings"/>
+    <item android:id="@+id/room_dashboard"
+        android:icon="@drawable/second_dashboard"
+        app:showAsAction="always"
+        android:visible="false"
+        android:title="another dashboard"
+        android:orderInCategory="1"/>
+    <item android:id="@+id/bt_settings"
+        android:icon="@drawable/ic_settings_bluetooth_black_24dp"
+        app:showAsAction="always"
+        android:orderInCategory="1"
+        android:title="Bluetooth settings"/>
+</menu>
